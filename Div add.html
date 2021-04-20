@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Form</title>
+<style>
+     .myStyle{
+                 border-style: solid;
+                 border-width: thin;
+                 border-color: #000000;
+                 border-radius: 15px;
+                 padding: 5px;
+                 margin: 5px;
+     }
+  </style>
+  <script type="text/javascript">
+  				function decorate(){
+  				var div = document.getElementById("mydiv");
+  				div.classList.add("myStyle");
+  				}
+  	</script>
+  	</head>
+  	<body>
+  	<div id="mydiv">javascript developer</div>
+  	<button onclick="decorate()">Add class to the above div</button>
+  	</body>
+  	</html>

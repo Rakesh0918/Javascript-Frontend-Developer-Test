@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Form</title>
+<script type="text/javascript">
+  function validate(){
+  var name = document.forms["form"]["firstname"].value;
+  var check = document.forms["form"]["checkme"].checked;
+  if(name==""){
+  alert("firstname can't be empty.");
+  }
+  if(check == false){
+  alert("please check the box");
+  }
+</script>
+<!-- edit your html here -->
+<body>
+<form name="form" onsubmit="return validate()">
+Name:<input type="text" name="firstname"/>
+CheckBox:<input type="checkbox" name="checkme"/>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
